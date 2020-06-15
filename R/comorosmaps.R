@@ -1,4 +1,7 @@
-km.data <- function(data=km.map_data, x="country",region=FALSE) {
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load( dplyr, usethis, here, sp, sf)
+
+comorosmaps_data <- function(x="country",region=FALSE) {
   if (x=="country" & region==TRUE) {
     state <- km.map_data %>%
       select(NAME, geometry) %>%
