@@ -109,7 +109,7 @@ comoros_sf <- kmmap_data_v0 %>%
   summarise() %>%
   rename(NAME=ID)
 
-km.map_data <- rbind(kmmap_data_v0,comoros_sf)
+comorosmaps_data <- rbind(kmmap_data_v0,comoros_sf)
 
 
-usethis::use_data(km.map_data, internal = TRUE, overwritten=TRUE)
+usethis::use_data(comorosmaps_data, internal = TRUE, overwritten=TRUE)

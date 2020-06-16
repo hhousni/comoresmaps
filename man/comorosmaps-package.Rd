@@ -4,9 +4,22 @@
 \name{comorosmaps-package}
 \alias{comorosmaps}
 \alias{comorosmaps-package}
-\title{comorosmaps: What the Package Does (Title Case)}
+\title{comorosmaps: Comoros Island Maps}
 \description{
-More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Maps of Comoros Island coastline, states, and administrative regions. Data 
+ can be drawn or accessed directly as simple features objects. Includes
+ simple functions for country or state maps of Comoros Island and in-built data
+ sets of administrative regions.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/hhousni/comorosmaps}
+}
+
+}
+\author{
+\strong{Maintainer}: Housni Hassani \email{happrend2@gmail.com}
+
 }
 \keyword{internal}
