@@ -112,4 +112,4 @@ comoros_sf <- kmmap_data_v0 %>%
 comorosmaps_data <- rbind(kmmap_data_v0,comoros_sf)
 
 
-usethis::use_data(comorosmaps_data, internal = TRUE, overwritten=TRUE)
+#usethis::use_data(comorosmaps_data, internal = TRUE, overwritten=TRUE)
