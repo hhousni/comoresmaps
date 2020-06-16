@@ -1,5 +1,5 @@
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load( dplyr, usethis, here, sp, sf)
+pacman::p_load( tidyverse,magrittr, usethis, here, sp, sf)
 
 # clean data
 
@@ -112,4 +112,4 @@ comoros_sf <- kmmap_data_v0 %>%
 km.map_data <- rbind(kmmap_data_v0,comoros_sf)
 
 
-usethis::use_data(km.map_data, internal = TRUE)
+usethis::use_data(km.map_data, internal = TRUE, overwritten=TRUE)
