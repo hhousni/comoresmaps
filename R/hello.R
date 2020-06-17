@@ -7,8 +7,3 @@ hello <- function() {
 }
 
 
-#' @export
-housni <- function() {
-  print("Je m'appelle Housni")
-}
-
