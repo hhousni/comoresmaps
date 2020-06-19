@@ -91,7 +91,14 @@ comoros_sf <- kmmap_data_v0 %>%
   summarise() %>%
   rename(NAME=ID)
 
-
 comorosmaps_data <- rbind(kmmap_data_v0,comoros_sf)
 
-usethis::use_data(comorosmaps_data, internal = TRUE, overwrite= TRUE)
+
+#Prepare City
+
+city_sf <- st_as_sf(city, coords = c("long","lat"), sf_column_name="geometry")
+st_crs(city_sf) <- "+proj=longlat +datum=WGS84 +no_defs"
+
+usethis::use_data(comorosmaps_data, city_sf, internal = TRUE, overwrite= TRUE)
+
+

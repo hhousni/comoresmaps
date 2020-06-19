@@ -9,6 +9,7 @@ if (!require("pacman")) install.packages("pacman")
                             "Hamahamet.Mboinkou","Itsandra.Hamanvou","Oichili.Dimani","Mbadjini.Est",
                             "Mbadjini.Ouest","Hambou","Kartala","Moroni.Bambao",
                             "Fomboni","Djando","Nioumachioi"))
+
     } else if (x=="country" & region==FALSE) {
       state <- comorosmaps_data %>%
         select(NAME, geometry) %>%
